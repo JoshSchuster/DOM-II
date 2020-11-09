@@ -9,3 +9,8 @@ aboutUsNav.addEventListener('mouseup', event => event.target.style.color = 'blac
 const funBusH1 = document.querySelector('h1')
 funBusH1.addEventListener('mouseover', event => event.target.style.fontSize = '6rem')
 funBusH1.addEventListener('mouseout', event => event.target.style.fontSize = '4rem')
+
+//3rd event - mouseenter on "Welcome To Fun Bus!" fontWeight bold, mouseleave changed back to normal
+const welcomeToFunBusH2 = document.querySelector('.intro h2')
+welcomeToFunBusH2.addEventListener('mouseenter', event => event.target.style.fontWeight = 'bolder')
+welcomeToFunBusH2.addEventListener('mouseleave', event => event.target.style.fontWeight = 'normal')
