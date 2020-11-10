@@ -34,3 +34,15 @@ adventureAwaitsH2[2].addEventListener('mouseout', event => event.target.style.ba
 const firstBoatImg = document.querySelector('.content-section.inverse-content img')
 firstBoatImg.addEventListener('dragstart', event => event.target.style.border = '.4rem solid red')
 firstBoatImg.addEventListener('mouseout', event => event.target.style.border = 'none')
+
+//This does not fire when nav item "Blog" is clicked because of stopPropagation() within the event listener tied to navBlog[2]
+const head = document.querySelector('header')
+head.addEventListener('click', event => {
+    console.log('You clicked within the header')
+})
+
+const navBlog = document.querySelectorAll('a')
+navBlog[2].addEventListener('click', event => {
+    event.stopPropagation()
+    console.log('You clicked the Blog nav menu item')
+})
