@@ -41,8 +41,27 @@ head.addEventListener('click', event => {
     console.log('You clicked within the header')
 })
 
-const navBlog = document.querySelectorAll('a')
-navBlog[2].addEventListener('click', event => {
+//stopPropagation() for "Blog"
+const navItems = document.querySelectorAll('a')
+navItems[2].addEventListener('click', event => {
     event.stopPropagation()
     console.log('You clicked the Blog nav menu item')
+})
+
+//stop nav items from refreshing the page using preventDefault()
+//Home
+navItems[0].addEventListener('click', event => {
+    event.preventDefault();
+})
+//About Us
+navItems[1].addEventListener('click', event => {
+    event.preventDefault();
+})
+//Blog
+navItems[2].addEventListener('click', event => {
+    event.preventDefault();
+})
+//Contact
+navItems[3].addEventListener('click', event => {
+    event.preventDefault();
 })
