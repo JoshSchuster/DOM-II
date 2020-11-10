@@ -24,3 +24,13 @@ busImg.addEventListener('mouseout', event => event.target.src = 'https://toppng.
 const letsGoH2 = document.querySelector('.content-section h2')
 letsGoH2.addEventListener('dblclick', event => event.target.textContent = 'LET\'S GO!!!!!!!!!!!!')
 letsGoH2.addEventListener('mouseout', event => event.target.textContent = 'Let\'s Go')
+
+//9th event - contextmenu on "Adventure Awaits" backgroundColor changed to yellow, moueout changed back
+const adventureAwaitsH2 = document.querySelectorAll('h2')
+adventureAwaitsH2[2].addEventListener('contextmenu', event => event.target.style.backgroundColor = 'yellow')
+adventureAwaitsH2[2].addEventListener('mouseout', event => event.target.style.backgroundColor = 'white')
+
+//10th event - dragstart on first boat img border changed, mouseout changed back
+const firstBoatImg = document.querySelector('.content-section.inverse-content img')
+firstBoatImg.addEventListener('dragstart', event => event.target.style.border = '.4rem solid red')
+firstBoatImg.addEventListener('mouseout', event => event.target.style.border = 'none')
