@@ -19,3 +19,8 @@ welcomeToFunBusH2.addEventListener('mouseleave', event => event.target.style.fon
 const busImg = document.querySelector('.intro img')
 busImg.addEventListener('click', event => event.target.src = 'https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/68832327_2327160754069243_6673518883149709312_n.png?_nc_cat=102&ccb=2&_nc_sid=85a577&_nc_ohc=O90xh-YMIXkAX-F3rjp&_nc_ht=scontent-msp1-1.xx&oh=bfd9304db018355564d62b953eff85bd&oe=5FD14205')
 busImg.addEventListener('mouseout', event => event.target.src = 'https://toppng.com/uploads/preview/bus-toy-sand-beach-yellow-11569851115kozomyrjfc.jpg')
+
+//8th event - dblclick on "Let's Go" changed to "LET's GO!!!!!!!!!!", mouseout changed back
+const letsGoH2 = document.querySelector('.content-section h2')
+letsGoH2.addEventListener('dblclick', event => event.target.textContent = 'LET\'S GO!!!!!!!!!!!!')
+letsGoH2.addEventListener('mouseout', event => event.target.textContent = 'Let\'s Go')
